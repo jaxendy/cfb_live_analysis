@@ -128,8 +128,6 @@ def week_grid(year_sel, week_sel, conference):
                     if game_info['completed']:
                         with c1:
                             st.markdown(f"### {game_info['homePoints']}")
-                        with c2:
-                            st.write("vs")
                         with c3:
                             st.markdown(f"### {game_info['awayPoints']}")
                         PPAtotalHome, PPApassingHome, PPArushingHome, PPAtotalAway, PPApassingAway, PPArushingAway, SRhomeTotal, SRawayTotal, thirdDPhome, thirdDaway, yardsPerPlayHome, yardsPerPlayAway, explosivesNumHome, explosivesNumAway, explosiveRateHome, explosiveRateAway, travestiesNumHome, travestiesNumAway, travestiesRateHome, travestiesRateAway = post_game_stats(client, game_id, year, week, home, away)
@@ -156,8 +154,6 @@ def week_grid(year_sel, week_sel, conference):
                             last = plays_list[-1]
                         with c1:
                             st.markdown(f"### {last.get('homeScore')}")
-                        with c2:
-                            st.write("vs")
                         with c3:
                             st.markdown(f"### {last.get('awayScore')}")
                         st.caption(f"Q{last.get('period')} {last.get('clock')} — {last.get('playText')}")
