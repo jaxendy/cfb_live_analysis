@@ -104,7 +104,7 @@ def week_grid(year_sel, week_sel, conference):
                     week = game_info["week"]
                     year = game_info['season']
 
-                    c1, c2, c3, c4 = st.columns([1, 0.5, 1, 5])
+                    c1, c2, c3, c4 = st.columns([1, 0.5, 1, 3.5])
                     with c1:
                         if logos.get(home):
                             st.image(logos[home], width=50)
